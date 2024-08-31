@@ -270,7 +270,7 @@ def show_recent_logs(message):
             response = "No data found ❌"
             bot.reply_to(message, response)
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @Mr_MajaRuL3799 ❄."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @Mr_MajaRuL3799 ☠️."
         bot.reply_to(message, response)
 
 
@@ -357,8 +357,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @Mr_MajaRuL3799
-Official Channel :- https://t.me/MjGaming
+Buy From :- @Mr_MajaRuL3799 😎
+Official Channel :- https://t.me/MjGaming99
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -375,7 +375,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏs ʙᴏᴛ, {user_name}! ᴛʜɪs ɪs ʜɪɢʜ ǫᴜᴀʟɪᴛʏ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss.
 🤖Try To Run This Command : /help 
-✅BUY :- @Mr_MajaRuL3799'''
+✅BUY :- @Mr_MajaRuL3799 ✅😎'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
