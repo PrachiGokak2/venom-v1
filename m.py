@@ -1,4 +1,4 @@
-#script by @venomXcrazy
+#script by @Mr_MajaRuL3799
 
 import telebot
 import subprocess
@@ -48,7 +48,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["5588464519"]
+    admin_id = ["1853011568"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -153,7 +153,7 @@ def add_user(message):
         else:
             response = "Please specify a user ID and the duration (e.g., 1hour, 2days, 3weeks, 4months) to add 😘."
     else:
-        response = "You have not purchased yet purchase now from:- @venomXcrazy."
+        response = "You have not purchased yet purchase now from:- @Mr_MajaRuL3799."
 
     bot.reply_to(message, response)
 
@@ -189,7 +189,7 @@ def remove_user(message):
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
     else:
-        response = "You have not purchased yet purchase now from:- @venomXcrazy 🙇."
+        response = "You have not purchased yet purchase now from:- @Mr_MajaRuL3799 🙇."
 
     bot.reply_to(message, response)
 
@@ -208,7 +208,7 @@ def clear_logs_command(message):
         except FileNotFoundError:
             response = "Logs are already cleared ❌."
     else:
-        response = "You have not purchased yet purchase now from :- @venomXcrazy ❄."
+        response = "You have not purchased yet purchase now from :- @Mr_MajaRuL3799 ❄."
     bot.reply_to(message, response)
 
 
@@ -259,7 +259,7 @@ def show_all_users(message):
 def show_recent_logs(message):
     user_id = str(message.chat.id)
     if user_id in admin_id:
-        if os.path.exists(LOG_FILE) and os.stat(LOG_FILE).st_size > 0:
+        if os.path.exists(LOG_FILE) and os.stat(LOG_FILE).st_size > 
             try:
                 with open(LOG_FILE, "rb") as file:
                     bot.send_document(message.chat.id, file)
@@ -320,7 +320,7 @@ def handle_bgmi(message):
         else:
             response = "✅ Usage :- /mj <target> <port> <time>"  # Updated command syntax
     else:
-        response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /bgmi command. DM TO BUY ACCESS:- @Mr_MajaRuL3799 ( MJ ) 😎")
+        response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /mj command. DM TO BUY ACCESS:- @Mr_MajaRuL3799 ( MJ ) 😎")
 
     bot.reply_to(message, response)
 
