@@ -259,7 +259,7 @@ def show_all_users(message):
 def show_recent_logs(message):
     user_id = str(message.chat.id)
     if user_id in admin_id:
-        if os.path.exists(LOG_FILE) and os.stat(LOG_FILE).st_size > 
+        if os.path.exists(LOG_FILE) and os.stat(LOG_FILE).st_size > 0:
             try:
                 with open(LOG_FILE, "rb") as file:
                     bot.send_document(message.chat.id, file)
